@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@200&family=Mulish:ital,wght@1,200&family=Roboto:wght@100&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: #171c28;
+  /* color:white; */
+}
+.intro {
+  color: white;
+  font-size: 1.2rem;
+}
+.hello {
+  margin: 5rem;
+  font-size: 1rem;
+}
+.hello img {
+  height: 2rem;
+  margin-left: 1rem;
+}
+.bio {
+  display: flex;
+  line-height: 6rem;
+}
+.bio p {
+  font-size: 3rem;
+  width: 60rem;
+  margin-left: 5rem;
+  display: flex;
+}
+.bio img {
+  height: 5rem;
+  margin-top: 9rem;
+  margin-right: 2rem;
+}
+.touch {
+  margin: 5rem;
+  align-items: baseline;
+}
+.touch img{
+  width: 2rem;
+  margin: 1rem 1rem -0.8rem 1rem;
+}
+.touch a {
+  text-decoration:none;
+  color: white;
+  border-bottom: 5px solid blue;
+}
+.background {
+  margin: 10rem;
+  display: flex;
+  width: 70%;
+  gap: 12rem;
+}
+.background h2 {
+  color: blue;
+}
+
+.skills {
+  display: flex;
+  gap: 5rem;
+  margin: 8rem;
+}
+.skills h2 {
+  color: blue;
+  margin-left: 1rem;
+}
+/* .languages {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 5rem;
+} */
+.languages {
+  display: flex;
+  align-items: center;
+}
+
+.bullet-list {
+  display: flex;
+  list-style-type: disc;
+  gap: 1rem;
+  margin-left: 10rem;
+}
+
+.bullet-list li {
+  margin-left: 10px;
+}
+
+.skills h3 {
+  margin-left: 5rem;
+}
+
+.resume{
+  /* margin: 5rem;
+  margin-left: 9rem; */
+  font-weight:bold;
+  text-align: center;
+  border: 2px dashed blue;
+  margin: 0rem 40rem;
+  padding: 1rem;
+
+}
+
+.projects h2{
+  margin: 5rem;
+  color: blue; 
+  margin-left: 9rem;
+}
+.samples{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+margin-left: 10rem;
+}
+.footer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 20px;
+}
+.footer img{
+  width: 5rem;
+
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+
+}
+
+.footer span,
+.footer a,
+.footer h3 {
+  margin: 0;
+  color: white;
+}
+
+/* .footer span:not(:last-child) {
+  margin-right: 10px;
+} */
+
+.footer .social {
+  display: flex;
+  align-items: center;
+}
+
+ .social{
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  margin-left: 5rem;
+  
+  margin-left: 40rem;
+/* justify-content: space-between; */
+}
+
+.iframe{
+  border: solid #000000;
+  width: 50%;
+  height: 30rem;
+}
