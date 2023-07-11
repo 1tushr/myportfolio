@@ -1,26 +1,69 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
+import {Dialog} from '@material-ui/core';
 import "../project.css";
 
-const Projects= ({src}) => {
-    const [isFullScreen, setIsFullScreen] = useState(false);
+const Projects = ({ imageSrc, iframeSrc, title }) => {
+  const [openModal, setOpenModal] = useState(false);
 
-  const handleFrameClick = () => {
-    setIsFullScreen((prevFullScreen) => !prevFullScreen);
+  const handleOpenModal = () => {
+    setOpenModal(true);
   };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
   return (
-    <div className={`mac-window ${isFullScreen ? 'fullscreen' : ''}`}>
+    <div className="mac-window">
       <div className="mac-window-header">
         <div className="mac-window-controls">
-          <div className="mac-window-control mac-window-control-red" onClick={handleFrameClick}></div>
-          <div className="mac-window-control mac-window-control-yellow"onClick={handleFrameClick} ></div>
-          <div className="mac-window-control mac-window-control-green"onClick={handleFrameClick} ></div>
+          <div className="mac-window-control mac-window-control-red"onClick={handleOpenModal}></div>
+          <div className="mac-window-control mac-window-control-yellow"onClick={handleOpenModal}></div>
+          <div className="mac-window-control mac-window-control-green" onClick={handleOpenModal}></div>
         </div>
       </div>
       <div className="mac-window-content">
-        <iframe src={src} title="Mac Window" onClick={handleFrameClick} sandbox></iframe>
+        <img className="mock" src={imageSrc} alt="Mock" onClick={handleOpenModal} />
       </div>
+      <Dialog open={openModal} onClose={handleCloseModal} maxWidth="md" fullWidth>
+        <div className="modal" onClick={handleCloseModal}>
+          <div className="modal-content">
+            <div className="modal-header">
+              <div className="modal-controls">
+                <div className="modal-control modal-control-red"onClick={handleCloseModal}></div>
+                <div className="modal-control modal-control-yellow"onClick={handleCloseModal}></div>
+                <div className="modal-control modal-control-green" onClick={handleCloseModal}></div>
+              </div>
+            </div>
+            <div className="modal-body" >
+              <iframe src={iframeSrc} title={title} allow='geolocation'></iframe>
+            </div>
+          </div>
+        </div>
+      </Dialog>
     </div>
   );
 };
 
 export default Projects;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//projects 
+//https://1tushr.github.io/Swiggy-Clone/
+//https://1tushr.github.io/Pizza-Restaurant/
+//https://1tushr.github.io/todo/
+//https://1tushr.github.io/weather/
+//https://1tushr.github.io/wp-clone/
+//crypto-tracker

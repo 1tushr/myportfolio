@@ -1,9 +1,21 @@
 import React, { useState, useEffect } from "react";
+import { color, motion } from "framer-motion"
 import wave from "../emojis/wave.png";
 import technologist from "../emojis/technologist.png";
 import pointRight from "../emojis/pointright.png";
-import heartHands from"../emojis/heart-hands (2).png"
-import "../styles.css"; // Import the CSS file
+import heartHands from "../emojis/heart-hands (2).png";
+import bmi from "../imges/bmi.png";
+import tesla from "../imges/tesla.png";
+import pizza from "../imges/pizza.png";
+import post from "../imges/post.png";
+import student from "../imges/student.png";
+import todo from "../imges/todo.png";
+import typer from "../imges/typer.png";
+import weather from "../imges/weather.png";
+import crypto from "../imges/crypto.png"
+import wp from "../imges/wp.png";
+import top from"../emojis/pointing-up.png";
+import "../styles.css";
 import Projects from "./Projects";
 export default function Mainpart() {
   const email = "tuhsar2022@gmail.com";
@@ -41,6 +53,10 @@ export default function Mainpart() {
     };
   }, []);
 
+const handleScroll=()=>{
+  window.scrollTo({top:"0",behavior:"smooth"});
+}
+
   return (
     <div className="intro">
       <div className="hello">
@@ -77,29 +93,18 @@ export default function Mainpart() {
       <div className="background">
         <h2>BACKGROUND</h2>
         <div className="about">
-          {" "}
           <p>
-            As an enthusiastic front-end developer, my passion lies in crafting
-            captivating user experiences. With a deep understanding of React, I
-            have the expertise to bring designs to life and create interactive
-            web applications that truly engage users. I am committed to staying
-            at the forefront of front-end trends and continuously expanding my
-            skill set to deliver cutting-edge solutions.
+          As a recent graduate with a Bachelor's degree in Computer Science, I am excited to bring my technical skills and passion for problem-solving to a dynamic and forward-thinking company.
+
+        </p>
+          <p>
+          During my studies, I gained a strong foundation in computer science concepts, including data structures, algorithms, and software development. I also worked on several personal projects, where I applied my skills to develop useful and innovative projects.
+
           </p>
           <p>
-            With a keen eye for detail and a focus on delivering exceptional
-            results, I bring confidence and dedication to every project I
-            undertake. I thrive in collaborative team environments, where I can
-            contribute my expertise and work alongside others to create seamless
-            and visually appealing user interfaces.
+          I am a detail-oriented and proactive individual with excellent communication skills. I thrive in fast-paced environments and enjoy the challenge of tackling complex problems. In my spare time, I enjoy staying up-to-date with the latest technology trends and exploring new programming languages.
           </p>
-          <p>
-            My commitment to continuous learning ensures that I stay up to date
-            with the latest technologies and best practices, allowing me to
-            deliver high-quality, pixel-perfect experiences. I am excited to
-            contribute my skills and enthusiasm to help shape the success of
-            future projects and exceed expectations as a front-end developer.
-          </p>
+          <p>I am confident that my passion for technology and my drive to learn and grow will make me a valuable asset to any team. I am eager to begin my career and make a positive impact as a member of a talented and innovative team.</p>
         </div>
       </div>
       <div className="skills">
@@ -118,51 +123,77 @@ export default function Mainpart() {
             <li>Linux</li>
           </ul>
         </div>
-
-       
-        {/* <h3>FRAMEWORKS</h3>
-        <h3>TOOLS</h3>
-        <h3>DESIGN</h3> */}
       </div>
-      <div className="resume">View My Resume</div>
+      <div className="resume">
+        <a href="https://drive.google.com/file/d/1Gj2cytJVJihutCc92eA_tXqCR7LBC_qc/view?usp=drive_link" style={{color:"white"}} target="blank">View My Resume</a>
+      </div>
       <div className="projects">
-          <h2>Featured Projects</h2>
-          <div className="samples">
-          <Projects src="https://merry-bubblegum-919802.netlify.app/"></Projects>
-          <Projects src="https://idyllic-platypus-74663e.netlify.app/"></Projects>
-          <p>project is fetching data from an api </p>
-         
-          <p>this project is fetching data from an api </p>
-          <Projects src="https://idyllic-platypus-74663e.netlify.app/"></Projects>
-          <Projects src="https://idyllic-platypus-74663e.netlify.app/"></Projects>
-          <p>project is fetching data from an api </p>
-         
-          <p>this project is fetching data from an api </p>
-
+        <h2>Featured Projects</h2>
+        <p style={{margin:"5rem",marginLeft:"9rem", textDecoration:"underline",fontSize:".9rem"}}>Open projects on clicking the any desired image and to close the project click on the navigation icons </p>
+        <div className="samples">
+      <div className="project-grid">
+        <div className="project">
+          <Projects imageSrc={typer} iframeSrc="https://super-typer.netlify.app/" />
+          <p>Typing Speed Test Using React</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={crypto} iframeSrc="https://merry-bubblegum-919802.netlify.app/" />
+          <p>Crypto Currency Price Tracker Using React</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={tesla} iframeSrc="https://tesla-clone-main.netlify.app/" />
+          <p>Tesla Home Page Clone Using React</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={post} iframeSrc="https://1tushr.github.io/postOfficeLocator" />
+          <p>Post Office Locator Using Ip Address Data Fetched From API</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={student} iframeSrc="https://1tushr.github.io/StudentManagement/" />
+          <p>Student Management CRUD App Using JS</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={todo} iframeSrc="https://1tushr.github.io/todo" />
+          <p>Todo App Using JS</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={weather} iframeSrc="https://1tushr.github.io/weather/" allow="geolocation" />
+          <p>Weather Checker Using Current Location Data Fetched From API</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={bmi} iframeSrc="https://1tushr.github.io/bmi/" />
+          <p>BMI Calculator</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={pizza} iframeSrc="https://1tushr.github.io/Pizza-Restaurant/" />
+          <p>Pizza Restaurant Landing Page</p>
+        </div>
+        <div className="project">
+          <Projects imageSrc={wp} iframeSrc="https://1tushr.github.io/wp-clone/" title="WhatsApp clone" />
+          <p>WhatsApp Landing Page Clone </p>
+        </div>
+      </div>
+    </div>
+      </div>
+      <footer className="footer">
+        <div className="footer-content">
+          <span>
+            <p>coded with</p>
+          </span>
+          <span>
+            <img src={heartHands} alt="Heart Hands" />
+          </span>
+          <span>
+            <p>by tushar</p>
+          </span>
+          <div className="social">
+            <a href="https://www.linkedin.com/in/1tushr"target="_blank">LinkedIn</a>
+            <a href="mailto:tuhsar2022@gmail.com"target="_blank">Email</a>
+            <a href="https://github.com/1tushr"target="_blank">Github</a>
+            <img src={top} onClick={handleScroll} style={{width:"2rem"}}></img>
           </div>
-          
-
         </div>
-        <footer className="footer">
-  <div className="footer-content">
-    <span>
-      <p>coded with</p>
-    </span>
-    <span>
-      <img src={heartHands} alt="Heart Hands"></img>
-    </span>
-    <span>
-      <p>by tushar</p>
-    </span>
-    <div className="social">
-    <a href="https://www.linkedin.com">LinkedIn</a>
-      <a href="mailto:your@email">Email</a>
-      <a href="https://github.com">Github</a>
-        </div>
-    
-  </div>
-</footer>
-
+      </footer>
     </div>
   );
 }
