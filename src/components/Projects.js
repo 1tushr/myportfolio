@@ -15,7 +15,7 @@ const Projects = ({ imageSrc, iframeSrc, title }) => {
 
   return (
     <div className="mac-window">
-      <div className="mac-window-header">
+      <div className="mac-window-header"onClick={handleOpenModal}>
         <div className="mac-window-controls">
           <div className="mac-window-control mac-window-control-red"onClick={handleOpenModal}></div>
           <div className="mac-window-control mac-window-control-yellow"onClick={handleOpenModal}></div>
