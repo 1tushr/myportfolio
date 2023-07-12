@@ -112,13 +112,13 @@ export default function Mainpart() {
           <ul className="bullet-list">
             <li>HTML</li>
             <li>CSS</li>
-            <li>JavaScript (ES6)</li>
+            <li>JavaScript</li>
             <li>React</li>
             <li>Redux</li>
             <li>Java</li>
             <li>SQL</li>
             <li>Git</li>
-            <li>Material-UI</li>
+            <li>AWS</li>
             <li>Linux</li>
           </ul>
         </div>
