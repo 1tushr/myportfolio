@@ -60,10 +60,3 @@ export default Projects;
 
 
 
-//projects 
-//https://1tushr.github.io/Swiggy-Clone/
-//https://1tushr.github.io/Pizza-Restaurant/
-//https://1tushr.github.io/todo/
-//https://1tushr.github.io/weather/
-//https://1tushr.github.io/wp-clone/
-//crypto-tracker
