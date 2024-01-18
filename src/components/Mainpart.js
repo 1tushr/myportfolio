@@ -164,7 +164,7 @@ export default function Mainpart() {
                 imageSrc={keep}
                 iframeSrc="https://keping-notes.netlify.app/"
               />
-              <p>Funds manager Using React</p>
+              <p>Google keep clone  Using React</p>
             </div>
 
             <div className="project">
