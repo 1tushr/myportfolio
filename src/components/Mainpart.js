@@ -30,7 +30,6 @@ export default function Mainpart() {
     "Bonjour!", // French
     "Ciao!", // Italian
     "Guten Tag!", // German
-   
   ];
 
   useEffect(() => {
@@ -113,13 +112,14 @@ export default function Mainpart() {
         <h2>SKILLS</h2>
         <div className="languages">
           <ul className="bullet-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
             <li>React</li>
             <li>Redux</li>
+            <li>JavaScript</li>
             <li>Java</li>
+            <li>Node Js</li>
+            <li>Express</li>
             <li>SQL</li>
+            <li>Mongo Db</li>
             <li>Git</li>
             <li>AWS</li>
             <li>Linux</li>
@@ -158,7 +158,7 @@ export default function Mainpart() {
               />
               <p>Funds manager Using React</p>
             </div>
-          
+
             <div className="project">
               <Projects
                 imageSrc={keep}
@@ -166,7 +166,6 @@ export default function Mainpart() {
               />
               <p>Funds manager Using React</p>
             </div>
-            
 
             <div className="project">
               <Projects
