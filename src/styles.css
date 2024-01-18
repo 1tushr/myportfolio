@@ -79,10 +79,12 @@
   list-style-type: disc;
   gap: 1rem;
   margin-left: 10rem;
+
 }
 
 .bullet-list li {
   margin-left: 10px;
+  white-space: nowrap;
 }
 
 .skills h3 {
