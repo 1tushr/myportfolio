@@ -14,7 +14,10 @@ import typer from "../imges/typer.png";
 import weather from "../imges/weather.png";
 import crypto from "../imges/crypto.png";
 import wp from "../imges/wp.png";
+import funds from "../imges/fundwise.png";
+import keep from "../imges/keep.png";
 import top from "../emojis/pointing-up.png";
+
 import "../styles.css";
 import Projects from "./Projects";
 export default function Mainpart() {
@@ -147,6 +150,24 @@ export default function Mainpart() {
               />
               <p>Typing Speed Test Using React</p>
             </div>
+
+            <div className="project">
+              <Projects
+                imageSrc={funds}
+                iframeSrc="https://fund-wise.netlify.app/"
+              />
+              <p>Funds manager Using React</p>
+            </div>
+          
+            <div className="project">
+              <Projects
+                imageSrc={keep}
+                iframeSrc="https://keping-notes.netlify.app/"
+              />
+              <p>Funds manager Using React</p>
+            </div>
+            
+
             <div className="project">
               <Projects
                 imageSrc={crypto}
