@@ -128,7 +128,7 @@ export default function Mainpart() {
       </div>
       <div className="resume">
         <a
-          href="https://drive.google.com/file/d/1Gj2cytJVJihutCc92eA_tXqCR7LBC_qc/view?usp=sharing"
+          href="https://drive.google.com/file/d/1lD2CSGN1IAQr6i-8mhL5WpUYSLdlWn_e/view?usp=sharing"
           style={{ color: "white" }}
           target="blank"
         >
